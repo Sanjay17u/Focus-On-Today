@@ -66,3 +66,99 @@ body {
         transform: rotate(360deg);
     }
 }
+
+.title__para {
+    margin-left: 30px;
+    color: #858585;
+    font-size: 14px;
+}
+
+.progressBar__container {
+    width: 92%;
+    margin: 0 auto;
+    border-radius: 50px;
+    height: 30px;
+    background-color: rgba(72, 163, 0, 0.07);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.progressBar {
+    width: 33%;
+    background-color: #48A300;
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.progressBar__Value {
+    font-size: 10px;
+    color: #EEFFE0;
+    margin-left: 2em;
+}
+
+.error__message {
+    margin-left: 2em;
+    font-size: 14px;
+    color: #FF5151;
+    opacity: 100;
+}
+
+.input__container {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 2em;
+    border: 2px #0000001A solid;
+    height: 87px;
+    border-radius: 17px;
+    padding-left: 1.5em;
+    margin-right: 2em;
+}
+
+.input__checkBox {
+    border: 2px #61481C4D solid;
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.input__main {
+    width: 100%;
+    align-self: stretch;
+    border: none;
+    border-radius: 17px;
+    padding-left: 2em;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.input__main::placeholder {
+    padding-left: 2em;
+    color: #D9D9D9;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.input__gap {
+    margin-top: 3.5em;
+}
+
+.I__am__One__Step__ahead__Today {
+    margin-top: 3em;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.Sanjay__Solanki {
+    color: #858585;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 5em;
+}
