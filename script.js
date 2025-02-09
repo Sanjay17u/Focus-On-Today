@@ -1,6 +1,7 @@
 const inputs = document.querySelectorAll('input');
 const inputsArray = Array.from(inputs);
 const checkBox = document.querySelectorAll('.input__checkBox');
+const errorLabel = document.querySelector('.error__message')
 
 
 checkBox.forEach((checkBox, index) => {
