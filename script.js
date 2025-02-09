@@ -17,13 +17,17 @@ checkBox.forEach((checkBox, index) => {
             errorLabel.style.opacity = 100
         }
 
+        inputs.forEach((input) => {
+            input.addEventListener('focus', () => {
+                errorLabel.style.transition = 'opacity 2s ease'
+                errorLabel.style.opacity = 0
+            })
+        })
+
         if(inputFields) {
             console.log('checked')
             checkBox.nextElementSibling.classList.toggle('Green__Text')
             checkBox.classList.toggle('Green__Tick')
-
-            errorLabel.style.transition = 'opacity 1s ease'
-            errorLabel.style.opacity = 0
 
             if(checkBox.classList.contains('Green__Tick')) {
                 inputs[index].disabled = true
