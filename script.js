@@ -12,10 +12,18 @@ checkBox.forEach((checkBox, index) => {
             return input.value.trim() !== ''
         })
 
+        if(!inputFields) {
+            errorLabel.style.transition = 'opacity 1s ease'
+            errorLabel.style.opacity = 100
+        }
+
         if(inputFields) {
             console.log('checked')
             checkBox.nextElementSibling.classList.toggle('Green__Text')
             checkBox.classList.toggle('Green__Tick')
+
+            errorLabel.style.transition = 'opacity 1s ease'
+            errorLabel.style.opacity = 0
 
             if(checkBox.classList.contains('Green__Tick')) {
                 inputs[index].disabled = true
