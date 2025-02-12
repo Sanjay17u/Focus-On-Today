@@ -4,9 +4,36 @@ const checkBox = document.querySelectorAll('.input__checkBox');
 const errorLabel = document.querySelector('.error__message')
 const progressBar = document.querySelector('.progressBar');
 const progressBarValue = document.querySelector('.progressBar__Value');
+const titlePara = document.querySelector('.title__para')
+const IamOneStepAheadToday = document.querySelector('.I__am__One__Step__ahead__Today')
 
 
 const allGoals = JSON.parse(localStorage.getItem('allGoals')) || {}
+
+
+function updateProgressBar() {
+    const totalGoals = Object.keys(allGoals).length
+    const completedGoals = Object.values(allGoals).filter(goal => goal.completed).length
+    
+    const progressPercentage = (completedGoals / totalGoals) * 100
+    progressBar.style.width = `${progressPercentage}%`
+
+    if(completedGoals === 0) {
+        progressBarValue.textContent = `${completedGoals}/${totalGoals}`
+    } else if(completedGoals >= 2) {
+        progressBarValue.textContent = `${completedGoals}/${totalGoals} Completed`
+        titlePara.classList.add('title__para')
+        titlePara.innerText = 'Just a step away, keep going!'
+        IamOneStepAheadToday.classList.add('I__am__One__Step__ahead__Today')
+        IamOneStepAheadToday.innerText = `“Keep Going, You’re making great progress!”`
+
+    } else {
+        progressBarValue.textContent = `${completedGoals}/${totalGoals} Completed`
+        titlePara.innerText = 'Raise the bar by completing your goals!'
+        IamOneStepAheadToday.innerText = `“Move one step ahead, today!”`
+    }
+}
+
 
 inputsArray.forEach((input, index) => {
     if (allGoals[input.id]) {
@@ -87,18 +114,23 @@ checkBox.forEach((checkBox, index) => {
                 allGoals[inputId].completed = !allGoals[inputId].completed
             }
             localStorage.setItem('allGoals', JSON.stringify(allGoals))
+
+            updateProgressBar()
         }
 
     })
 
 
-    inputsArray.forEach((input, index) => {
+    inputsArray.forEach((input) => {
         input.addEventListener('input', (e) => {
             allGoals[e.target.id] = {
                 name: e.target.value,
                 completed: false,
             }
             localStorage.setItem('allGoals', JSON.stringify(allGoals))
+
+            updateProgressBar()
         })
     })
 })
+updateProgressBar()
