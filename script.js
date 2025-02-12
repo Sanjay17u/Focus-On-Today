@@ -2,6 +2,8 @@ const inputs = document.querySelectorAll('input');
 const inputsArray = Array.from(inputs);
 const checkBox = document.querySelectorAll('.input__checkBox');
 const errorLabel = document.querySelector('.error__message')
+const progressBar = document.querySelector('.progressBar');
+const progressBarValue = document.querySelector('.progressBar__Value');
 
 
 const allGoals = JSON.parse(localStorage.getItem('allGoals')) || {}
