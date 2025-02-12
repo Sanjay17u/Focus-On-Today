@@ -327,8 +327,8 @@ body {
     }
 
     .smile__face__img__child {
-        left: 12px;  
-        bottom: 33px;
+        left: 1.65rem;
+        bottom: 2.9rem;
         width: 25%;
         position: absolute;
     }
@@ -341,12 +341,12 @@ body {
 
     .sun__img__parent {
         padding-block: 1em;
-        width: 8%;
+        width: 17%;
         position: relative;
     }
 
     .input__gap{
-        margin-top: 2.5em;
+        margin-top: 1.5em;
     }
 
     .error__message {
@@ -354,6 +354,87 @@ body {
         font-size: 12px;
     }
 
+}
+
+@media screen and (max-width: 436px) {
+    .smile__face__img__child {
+        left: 1.5rem;
+        bottom: 2.7rem;
+        width: 25%;
+        position: absolute;
+    }
+
+    .both__img {
+        margin-left: 1em;
+        position: relative;
+        vertical-align: middle;
+    }
+
+    .sun__img__parent {
+        padding-block: 1em;
+        width: 17%;
+        position: relative;
+    }
+}
+@media screen and (max-width: 398px) {
+    .smile__face__img__child {
+        left: 1.35rem;
+        bottom: 2.6rem;
+        width: 25%;
+        position: absolute;
+    }
+
+    .both__img {
+        margin-left: 1em;
+        position: relative;
+        vertical-align: middle;
+    }
+
+    .sun__img__parent {
+        padding-block: 1em;
+        width: 17%;
+        position: relative;
+    }
+}
+@media screen and (max-width: 371px) {
+    .smile__face__img__child {
+        left: 1.24rem;
+        bottom: 2.5rem;
+        width: 25%;
+        position: absolute;
+    }
+
+    .both__img {
+        margin-left: 1em;
+        position: relative;
+        vertical-align: middle;
+    }
+
+    .sun__img__parent {
+        padding-block: 1em;
+        width: 17%;
+        position: relative;
+    }
+}
+@media screen and (max-width: 351px) {
+    .smile__face__img__child {
+        left: 1.15rem;
+        bottom: 2.4rem;
+        width: 25%;
+        position: absolute;
+    }
+
+    .both__img {
+        margin-left: 1em;
+        position: relative;
+        vertical-align: middle;
+    }
+
+    .sun__img__parent {
+        padding-block: 1em;
+        width: 17%;
+        position: relative;
+    }
 }
 
 @media screen and (max-width: 320px) {
