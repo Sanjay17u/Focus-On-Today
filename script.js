@@ -4,6 +4,8 @@ const checkBox = document.querySelectorAll('.input__checkBox');
 const errorLabel = document.querySelector('.error__message')
 
 
+const allGoals = {}
+
 checkBox.forEach((checkBox, index) => {
     checkBox.addEventListener('click', () => {
 
@@ -48,5 +50,13 @@ checkBox.forEach((checkBox, index) => {
             }
         }
 
+    })
+
+
+    inputsArray.forEach((input) => {
+        input.addEventListener('input', (e) => {
+            allGoals[e.target.id] = e.target.value
+            console.log(e.target.id)
+        })
     })
 })
