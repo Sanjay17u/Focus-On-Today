@@ -194,3 +194,220 @@ body {
     text-align: center;
     margin-top: 5em;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 48px;
+    }
+
+    .main__container {
+        max-width: 100%;
+        height: auto;
+        margin-block: 1em;
+        padding: 1em;
+    }
+
+    .container__heading {
+        font-size: 28px;
+    }
+
+    .input__container {
+        margin-left: 1em;
+        margin-right: 1em;
+        padding-left: 1em;
+    }
+
+    .progressBar__Value {
+        font-size: 12px;
+        margin-left: 1em;
+    }
+
+    .input__main {
+        font-size: 14px;
+    }
+
+    .I__am__One__Step__ahead__Today,
+    .Sanjay__Solanki {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 36px;
+        padding: 0 10px;
+    }
+
+    .heading span {
+        font-size: 36px;
+    }
+
+    .main__container {
+        max-width: 100%;
+        height: auto;
+        margin-block: 1em;
+        padding: 1em;
+        margin-inline: 1em;
+        margin-top: 15px;
+    }
+
+    .container__heading {
+        font-size: 22px;
+        vertical-align: sub;
+        cursor: default;
+        display: inline-block;
+    }
+
+    .input__container {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        padding-left: 1em;
+        height: 50px;  
+    }
+
+    .input__checkBox {
+        width: 20px;
+        height: 20px;
+    }
+
+    .right__check{
+        width: 50%;
+    }
+
+    .input__main {
+        font-size: 14px;
+        padding-left: 1.5em;
+    }
+
+    .input__main::placeholder {
+        font-size: 14px;
+    }
+
+    .progressBar__container {
+        width: 92%;
+        margin: 0 auto;
+        border-radius: 50px;
+        height: 20px; 
+    }
+
+    .progressBar {
+        height: 100%;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        transition: width 2s ease-in-out;
+    }
+
+    .progressBar__Value {
+        font-size: 10px;
+        margin-left: 2em;
+        white-space: nowrap;
+        overflow: hidden;
+        line-height: 12px;
+    }
+
+    .error__message {
+        font-size: 12px;
+    }
+
+    .title__para {
+        margin-left: 20px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .I__am__One__Step__ahead__Today,
+    .Sanjay__Solanki {
+        font-size: 10px;
+        margin-top: 2em;
+    }
+
+    .smile__face__img__child {
+        left: 12px;  
+        bottom: 33px;
+        width: 25%;
+        position: absolute;
+    }
+
+    .both__img {
+        margin-left: 1em;
+        position: relative;
+        vertical-align: middle;
+    }
+
+    .sun__img__parent {
+        padding-block: 1em;
+        width: 8%;
+        position: relative;
+    }
+
+    .input__gap{
+        margin-top: 2.5em;
+    }
+
+    .error__message {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    
+    .smile__face__img__child {
+        left: 16px;  
+        bottom: 36px;
+        width: 27%;
+        position: absolute;
+    }
+
+    .both__img {
+        margin-left: 1em;
+        position: relative;
+        vertical-align: middle;
+    }
+
+    .sun__img__parent {
+        padding-block: 1em;
+        width: 17%;
+        position: relative;
+    }
+
+    .title__para {
+        margin-left: 20px;
+        margin-top: 3.5px;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+
+    .progressBar__container {
+        width: 92%;
+        margin: 0 auto;
+        border-radius: 50px;
+        height: 17px; 
+    }
+
+    .progressBar__Value {
+        font-size: 8px;
+        margin-left: 2em;
+        white-space: nowrap;
+        overflow: hidden;
+        line-height: 12px;
+    }
+
+    .input__container{
+        margin-top: 15px;
+    }
+
+    .input__gap{
+        margin-top: 1.7em;
+    }
+
+    .error__message {
+        margin-top: 15px;
+        font-size: 10px;
+    }
+}
